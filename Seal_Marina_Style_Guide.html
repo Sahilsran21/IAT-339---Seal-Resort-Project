@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Blepi Seal Paradise Style Sheet - Project 1 </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">  <!-- PARAGRAPH FONT -->
+  <link href="css/Seal_Marina_Style_Guide.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- TITLE AND NAVIGATION SECTION -->
+
+<div class ="header">
+  <nav>
+    <!--  <img src = "blepi_logo.png" alt="A logo for the site." class="logo"> -->
+      <ul class= "navigation_links">
+          <li> <a href="#interactive_elements">Interactive Elements</a> </li>
+          <li> <a href="#text_elements">Text Elements</a> </li>
+          <li> <a href="#combined_elements">Combined Elements</a> </li>
+          <li> <a href="product_listing.html">Product Listing Template</a> </li>
+          <li> <a href="checkout.html">Checkout Template</a> </li>
+          <li> <a href="#references">Citations</a> </li>
+      </ul>
+  </nav>
+
+  <div class = "page_title">
+    <h1 class = "Element_Header"> Blepi Seal Paradise Style Sheet - Project 1 </h1>
+    <h2> Elements that will be used for the Blepi Seal Resort Website </h2>
+  </div>
+</div>
+
+<div class= "image_grid">
+    <img src="img/cristina_with_seal_miami.png" alt="A fine seal with a fine swimmer." class = "image_grid_element">
+    <img src="img/seal_bar.jpg" alt="A pool-side bar." class = "image_grid_element">
+    <img src="img/family_with_seal.jpg" alt="A family with a harbour seal." class = "image_grid_element">
+</div>
+
+<h2 class = "about_the_resort_title"> About Blepi Seal Paradise </h2>
+
+<p class = "about_the_resort_description"> Blepi Seal Paradise is a one-of-a-kind concept that blends a pool resort and pet
+cafe in one! Families can come relax in our resort, as well as swim alongside our habilitated rescue seals.
+The resort also features a water-side cafe where visitors can enjoy fresh smoothies. We aim to provide an
+enriched experience for children through playful interaction with the seals. </p>
+
+
+
+<!-- COLOUR AND FONT SECTION -->
+  <section class = "element">
+    <h2 class = "Element_Header"> Colours </h2>
+      <div class = "colourstyle_container">
+        <div class = "colourstyle_grid">
+              <div class = "colourstyle_grid_element">
+                  <div class="primary_color_square"></div>
+                      <h4 class = "colour_labels"> Primary Colour: #07293E </h4>
+              </div>
+              <div class = "colourstyle_grid_element">
+                  <div class="secondary_color_square"></div>
+                      <h4 class = "colour_labels"> Secondary Colour: #256D85 </h4>
+              </div>
+
+              <div class = "colourstyle_grid_element">
+                  <div class="hover_color_square"></div>
+                      <h4 class = "colour_labels"> Hover Element Colour: #8FE3CF </h4>
+              </div>
+
+              <div class = "colourstyle_grid_element">
+                  <div class = "button_color_container">
+                      <div class="button_color_square_1"></div>
+                      <div class="button_color_square_2"></div>
+                  </div>
+                      <h4 class = "colour_labels"> Button Gradient Colours: #2B4865/#002B5B </h4>
+              </div>
+        </div>
+      </div>
+
+<br>
+
+    <h2 class = "Element_Header"> Fonts </h2>
+      <div class = "fontstyle_container">
+        <div class = "fontstyle_grid">
+              <div class = "fontstyle_grid_element">
+                  <h2> Header: Metropolis-Bold </h2>
+                    <p class = "metropolis_bold_sample_font" > The quick brown fox jumped over the lazy dog. </p>
+              </div>
+
+              <div class = "fontstyle_grid_element">
+                  <h2> Paragraph: Metropolis-Regular </h2>
+                    <p class = "metropolis_regular_sample_font" > The quick brown fox jumped over the lazy dog. </p>
+              </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+<!-- INTERACTION ELEMENTS SECTION -->
+<section id="interactive_elements">
+
+<!-- ELEMENT #1 - IN-TEXT LINK-->
+  <section class="element">
+    <h3 class = "Element_Header"> In-Text Link </h3>
+      <nav>
+        <a href = "https://www.sealrescueireland.org/"> SealRescueIreland - A sponsor of Seal Cafe </a>   <!-- Used Shay Howe's Tutorial for proper syntax -->
+      </nav>
+  </section>
+
+<!-- ELEMENT #2 - NAVIGATION LINK-->
+  <section id="element_2">
+  <section class="element">
+    <h3 class = "Element_Header"> Navigation Link </h3>    <!--Referenced HTML Style Guide Template from Canvas-->
+      <nav>
+        <a href="#seal_picture"> Seal Picture </a>
+      </nav>
+  </section>
+  </section>
+
+<!-- ELEMENT #3 - SUBMIT AND RESET BUTTON-->
+  <section id="element_3">
+  <section class="element">
+    <h3 class = "Element_Header"> Submit and Reset Button </h3>       <!-- Used W3schools example for correct syntax -->
+      <form class = "form" action="#" method= "get">
+        <fieldset class = "account-info">
+          <label> Please enter your full name and email address to book a time: </label>
+        </fieldset>
+
+        <fieldset class = "margin-control">
+            <label for="full_name"> Full Name:
+              <input type="text" id="full_name" name="full_name" class="form_input"> </label> <br><br>
+            <label for="email_address"> Email Address:
+              <input type="text" id="email_address" name="email_address" class="form_input"> </label> <br><br>
+        </fieldset>
+
+      <fieldset class = "account-action">
+            <input class="form_button" type="Submit" name="Submit" value="Submit">    <!-- Taken from Building Forms by Shay Howe -->
+            <input class="form_button" type="Reset" name="Reset" value="Reset">
+      </fieldset>
+      </form>
+  </section>
+  </section>
+
+<!-- ELEMENT #4 - TEXT INPUT FIELD W/ LABEL -->
+  <section id="element_4">
+  <section class="element">
+    <h3 class = "Element_Header"> Text Input Field W/ Label </h3>
+      <form class = "form" action="#" method= "get">
+        <fieldset class = "account-info">
+          <label for ="seal_name"> Enter the name of your favorite seal: </label>
+        </fieldset>
+        <fieldset class = "margin-control">
+              <label for="seal_name" class="form_label"> Seal name:
+                  <input type="text" id="seal_name" Name="seal_name" class="form_input"> </label><br>  <!-- Used Amber Wilson's Tutorial for correct syntax -->
+        </fieldset>
+      </form>
+  </section>
+  </section>
+
+<!-- ELEMENT #5 - RADIO BUTTON INPUT FIELD W/ LABEL -->
+  <section id="element_5">
+  <section class ="element">
+    <h3 class = "Element_Header"> Radio Button Input Field W/ Label </h3>       <!-- Used W3schools example for correct syntax -->
+      <form class = "form" action="#" method= "get">
+        <fieldset class = "account-info">
+          <label> What is your favorite seal breed? </label>
+        </fieldset>
+
+        <fieldset class = "margin-control">
+            <input type="radio" id="hawaiian_monk_seal" name="favorite_seal" value="Hawaiian Monk Seal" class="form_input">
+              <label for="hawaiian_monk_seal" class="form_label"> Hawaiian Monk Seal </label><br>
+                <input type="radio" id="harbour_seal" name="favorite_seal" value="Harbour Seal" class="form_input" >
+              <label for="harbour_seal" class="form_label"> Harbour Seal </label><br>
+                <input type="radio" id="weddell_seal" name="favorite_seal" value="Weddell Seal" class="form_input">
+              <label for="weddell_seal" class="form_label"> Weddell Seal </label><br>
+        </fieldset>
+      </form>
+  </section>
+  </section>
+
+<!-- ELEMENT #6 - IMAGE AS A LINK -->
+<section id="seal_picture">
+  <section class="element">
+    <h3 class = "Element_Header"> Image as a Link </h3>
+      <h4> Learn more about our finest seals here: </h4>
+        <nav>
+          <a href="https://www.sealrescueireland.org/2020/02/12/a-trip-to-seal-rescue-ireland/"> </a>
+        </nav>
+          <div class = "seal_image_container">
+            <figure>
+              <img src="img/baby_seal.jpg" alt="A fine baby seal." class = "seal_image">    <!-- Used CSS_Basics_Starter Tutorial Code to learn how to properly link image to HTML File -->
+            </figure>
+                <div class="seal_image_overlay">
+                  <div class="seal_image_text">Check out the seal here!</div>
+                </div>
+
+          </div>                                                     <!-- Used PageDart Shay Howe's Tutorial to apply proper image link to new URL-->
+                                                               <!-- Used seal image from SealRescueIreland website -->
+  </section>
+</section>
+</section>
+
+
+<!-- TEXT ELEMENTS SECTION -->
+<section id="text_elements">
+
+<!-- ELEMENT #7 - HEADINGS -->
+  <section class="element">
+    <h3 class = "Element_Header"> Headings </h3>
+        <h3> Heading Size 3 </h3>
+        <h4> Heading Size 4 </h4>
+        <h5> Heading Size 5 </h5>
+        <h6> Heading Size 6 </h6>
+  </section>
+
+<!-- ELEMENT #8 - PARAGRAPHS -->
+  <section class="element">
+    <h3 class = "Element_Header"> Paragraphs </h3>
+      <h4> About Seal Cafe </h4>
+        <p class = "seal_description"> Blepi Seal Paradise is a one-of-a-kind concept that blends a pool resort
+            and pet cafe in one! Families can come relax in our resort, as well as swim alongside
+            our habilitated rescue seals. The resort also features a water-side cafe where visitors can
+            enjoy fresh smoothies. We aim to provide an enriched experience for children through playful
+            interaction with the seals.
+        </p>
+  </section>
+
+<!-- ELEMENT #9 - NUMBERED LIST -->
+  <section class="element">
+    <h3 class = "Element_Header"> Numbered List </h3>
+      <form class = "form" action="#" method= "get">
+        <fieldset class = "account-info">
+          <label> Activities at Seal Cafe: </label>
+        </fieldset>
+          <fieldset>
+            <ol>
+              <li class = "text-control"> Feed and play with the harbour seals in our designated seal pool </li>
+              <li class = "text-control"> Enjoy tropical drinks at the poolside bar </li>
+              <li class = "text-control"> Swim freely in our human exclusive pool </li>
+            </ol>
+          </fieldset>
+      </form>
+  </section>
+</section>
+
+
+<!-- COMBINED ELEMENTS SECTION -->
+<section id="combined_elements">
+
+<!-- ELEMENT #10 - MAIN NAVIGATION -->
+  <section class="element">
+    <h3 class = "Element_Header"> Main Navigation </h3>
+      <nav>
+        <a href="#element_2">Element 2</a>
+        <a href="#element_3">Element 3</a>
+        <a href="#element_4">Element 4</a>
+        <a href="#element_5">Element 5</a>
+      </nav>
+  </section>
+
+<!-- ELEMENT #11 - PRODUCT/SERVICE LISTING -->
+  <section class="element">
+    <h3 class = "Element_Header"> Product/Service Listing </h3>
+
+    <div class= "services_grid">
+      <form class = "form" action="#" method= "get">
+        <div class = "services_grid_element">
+        <fieldset class = "account-info">
+          <label> Available Services at Blepi Seal Paradise </label>
+            <ul>
+              <li class = "bold-text-control"> Daily Access to the seal pool </li>
+                <ul>
+                  <li> Children 4 - 12 ($40) </li>
+                  <li> Teen 13 - 18 ($45) </li>
+                  <li> Adults 18+ ($50) </li>
+                </ul>
+
+              <li class = "bold-text-control"> Daily Access to the human pool + poolside bar </li>
+                <ul>
+                  <li> Children 4 - 12 ($20) </li>
+                  <li> Teen 13 - 18 ($25) </li>
+                  <li> Adults 18+ ($30) </li>
+                </ul>
+
+              <li class = "bold-text-control"> Monthly Platinum Pass (Seal pool + human pool + poolside bar) </li>
+                <ul>
+                  <li> Children 4 - 12 ($50) </li>
+                  <li> Teen 13 - 18 ($60) </li>
+                  <li> Adults 18+ ($70) </li>
+                </ul>
+            </ul>
+        </fieldset>
+      </div>
+      </form>
+
+      <div>
+        <figure class = "services_image_size">
+          <img src="img/seal_bar.jpg" alt="A refreshing bar." class="services_grid_element">
+        </figure>
+
+           <p class = "services_text_control">Seal Marina features an All-you-can-drink experience
+              at the poolside bar! Enjoy refreshing beverages while playful seals swim freely about
+              in the pool! Spots are limited so booking should be done in advance through our reservation
+              system. </p>
+      </div>
+    </div>
+  </section>
+
+<!-- ELEMENT #12 - PAYMENT FORM -->
+  <section class= "element">
+    <h3 class = "Element_Header"> Payment Form </h3>
+        <form class = "form" action="#" method= "get">
+          <fieldset class = "account-info">
+            <label> Please confirm your method of payment: </label>
+          </fieldset>
+
+          <fieldset class = "margin-control">
+              <input type="radio" id="visa_debit" name="payment_method" value="Visa Debit" class="form_input">
+                <label for="visa_debit" class="form_label"> Visa Debit </label><br>
+              <input type="radio" id="mastercard" name="payment_method" value="Mastercard" class="form_input">
+                <label for="mastercard" class="form_label"> Mastercard </label><br>
+              <input type="radio" id="paypal" name="payment_method" value="Paypal" class="form_input">
+                <label for="paypal" class="form_label"> Paypal </label><br>
+
+                  <h4> <label> Card Number: <input type="text" Name="card_number" class="form_input"> </label> <br>    <!-- Was missing class declaration in label, couldnt change label properties (learned from "Sign Up Form HTML CSS" tutorial) -->
+                  <label> Expiry Date: <input type="text" Name="expiry_date" class="form_input"> </label> <br>
+                  <label> CVV Number: <input type="text" Name="CVV Number" class="form_input"> </label> </h4> <br><br>
+          </fieldset>
+
+          <fieldset class = "account-action">
+                <input class="form_button" type="Submit" name="Submit" value="Enter">
+          </fieldset>
+        </form>
+    </section>
+
+<!-- ELEMENT #13 - CHECKOUT CART -->
+  <section class= "element">
+    <h3 class = "Element_Header"> Checkout Cart </h3>
+      <div class= "checkout_container">
+        <fieldset class = "account-info">
+          <label> Checkout Cart </label>
+        </fieldset>
+
+            <div class= "checkout_grid">
+              <ul class = "checkout_grid_element">
+                  <li> Seal Pool - Child (x1) </li>
+                  <li> Seal Pool - Adult (x2) </li>
+                  <br>
+                  <li class = "checkout_text_control"> Grand Total </li>
+              </ul>
+
+              <ul class = "checkout_grid_element">
+                  <li> $40.00 </li>
+                  <li> $100.00 </li>
+                  <br>
+                  <li class = "checkout_text_control"> $140.00 </li>
+              </ul>
+            </div>
+
+            <fieldset class = "account-action">
+                  <input class="form_button" type="Submit" name="Submit" value="Checkout">
+            </fieldset>
+      </div>
+  </section>
+</section>
+
+
+<!-- REFERENCES SECTION -->
+<section id="references">
+  <section class="element">
+    <h2> References - Html Basics </h2>
+      <ul>
+          <li> Howe, Shay. Tutorial for In-text link. Retrieved from <a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/"> https://learn.shayhowe.com/html-css/building-your-first-web-page/ </a></li>
+          <li> W3schools. HTML button type Attribute. Retrieved from <a href= "https://www.w3schools.com/tags/att_button_type.asp"> https://www.w3schools.com/tags/att_button_type.asp </a></li>
+          <li> Wilson, Amber. 2021. HTML Inputs and Labels: A Love Story. Retrieved from <a href= "https://css-tricks.com/html-inputs-and-labels-a-love-story/"> https://css-tricks.com/html-inputs-and-labels-a-love-story/ </a></li>
+          <li> W3schools. HTML Forms. Retrieved from <a href= "https://www.w3schools.com/html/html_forms.asp"> https://www.w3schools.com/html/html_forms.asp </a></li>
+          <li> PageDart. 2021. Linking Image in HTML: How to create links from images. Retrieved from <a href= "https://pagedart.com/blog/linking-images-in-html/"> https://pagedart.com/blog/linking-images-in-html/ </a></li>
+          <li> CSS_Basics_Starter Tutorial Code. Retrieved from SFU Canvas, week 2 module </li>
+          <li> HTML Style Guide Template. Retrieved from SFU Canvas, Assignments, September 16: HTML Basics </li>
+      </ul>
+
+    <h2> References - CSS Basics </h2>
+      <ul>
+          <li> Header Font - Pathagonia. Retrieved from <a href= "https://www.dafont.com/pathagonia.font"> https://www.dafont.com/pathagonia.font </a></li>
+          <li> Paragraph Font - Inter (regular). Retrieved from <a href= "https://fonts.google.com/specimen/Inter"> https://fonts.google.com/specimen/Inter </a></li>
+          <li> Krossing, Dani. 2017. How to Import New Fonts | Basics of CSS. Retrieved from <a href="https://www.youtube.com/watch?v=Hwq_Mr12bcI"> https://www.youtube.com/watch?v=Hwq_Mr12bcI </a></li>
+          <li> Patel, Harshil. 2022. 6 Creative Ideas for CSS Link Hover Effects. Retrieved from <a href= "https://css-tricks.com/css-link-hover-effects/"> https://css-tricks.com/css-link-hover-effects/ </a></li>
+          <li> :focus. Retrieved from <a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus"> https://developer.mozilla.org/en-US/docs/Web/CSS/:focus </a></li>
+          <li> How TO - Image Hover Overlay. Retrieved from <a href= "https://www.w3schools.com/howto/howto_css_image_overlay.asp"> https://www.w3schools.com/howto/howto_css_image_overlay.asp </a></li>
+          <li> CSS Layout - width and max-width. Retrieved from <a href= "https://www.w3schools.com/css/css_max-width.asp"> https://www.w3schools.com/css/css_max-width.asp </a></li>
+          <li> Howe, Shay. Building Forms. Retrieved from <a href= "https://learn.shayhowe.com/html-css/building-forms/"> https://learn.shayhowe.com/html-css/building-forms/ </a></li>
+          <li> 2021. How To Make A Website Header Using HTML And CSS | Add Video Background On HTML website. Retrieved from <a href= "https://www.youtube.com/watch?v=G6SwH0lFxM8"> https://www.youtube.com/watch?v=G6SwH0lFxM8 </a></li>
+          <li> W3schools. CSS font-weight Property. Retrieved from <a href="https://www.w3schools.com/cssref/pr_font_weight.asp"> https://www.w3schools.com/cssref/pr_font_weight.asp </a></li>
+          <li> dcode. 2021. How to Create an Image Grid Gallery - HTML, CSS Web Design Tutorial. Retrieved from <a href="https://www.youtube.com/watch?v=rnhoY5Cdmy0"> https://www.youtube.com/watch?v=rnhoY5Cdmy0 </a></li>
+          <li> W3schools. How TO - CSS Shapes. Retrieved from <a href= "https://www.w3schools.com/howto/howto_css_shapes.asp"> https://www.w3schools.com/howto/howto_css_shapes.asp </a></li>
+          <li> Bos, Bert. 2021. W3 Style Sheets (Centering Things). Retrieved from <a href= "https://www.w3.org/Style/Examples/007/center.en.html"> https://www.w3.org/Style/Examples/007/center.en.html </a></li>
+          <li> W3schools. CSS Layout - Horizontal & Vertical Align. Retrieved from <a href= "https://www.w3schools.com/css/css_align.asp"> https://www.w3schools.com/css/css_align.asp </a></li>
+          <li> W3schools. How TO - Responsive Form. Retrieved from <a href= "https://www.w3schools.com/howto/howto_css_responsive_form.asp"> https://www.w3schools.com/howto/howto_css_responsive_form.asp </a></li>
+          <li> Hepat, Nitin. 2020. Top 5 Ways To Display Two Div Side By Side Using CSS. Retrieved from <a href= "https://morioh.com/p/84b3ea38043c"> https://morioh.com/p/84b3ea38043c </a></li>
+          <li> Delise, Angela. 2021. Input Animations with HTML and CSS | Input Label Animation. Retrieved from <a href= "https://www.youtube.com/watch?v=v8mRUU3orjI"> https://www.youtube.com/watch?v=v8mRUU3orjI </a></li>
+      </ul>
+
+    <h2> References - Images </h2>
+      <ul>
+          <li> SealRescueIreland. 2020. Image of a baby seal. Retrieved from <a href= "https://www.sealrescueireland.org/2020/02/12/a-trip-to-seal-rescue-ireland/"> https://www.sealrescueireland.org/2020/02/12/a-trip-to-seal-rescue-ireland/ </a></li>
+          <li> Image of Hotel Riu Santa Fe in Cabo San Lucas, Mexico. Retrieved from <a href="https://www.scubacaribe.com/hotels/hotel-riu-santa-fe/"> https://www.scubacaribe.com/hotels/hotel-riu-santa-fe/ </a></li>
+          <li> Bendfeldt-Diaz, Paula. 2022. Swimming with Seals And Making Family Memories At The Miami Seaquarium. Retrieved from <a href="https://growingupbilingual.com/swimming-seals-making-family-memories-miami-seaquarium/"> https://growingupbilingual.com/swimming-seals-making-family-memories-miami-seaquarium/ </a></li>
+          <li> DolphinWorld. Image of Seal and Swimmer. Recieved from <a href="https://reservation.dolphinworldstore.com/product/820-seal-swim-miami-low-season/"> https://reservation.dolphinworldstore.com/product/820-seal-swim-miami-low-season/ </a></li>
+      </ul>
+
+    <h2> Fonts </h2>
+      <ul>
+          <li> Metropolis - Regular. Retrieved from <a href= "https://www.1001fonts.com/metropolis-font.html"> https://www.1001fonts.com/metropolis-font.html </a></li>
+          <li> Metropolis - Bold. Retrieved from <a href= "https://www.1001fonts.com/metropolis-font.html"> https://www.1001fonts.com/metropolis-font.html </a></li>
+      </ul>
+
+  </section>
+</section>
+
+
+
+
+
+
+
+
+</body>
