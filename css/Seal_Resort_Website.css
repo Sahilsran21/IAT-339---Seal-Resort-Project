@@ -285,10 +285,9 @@ code {
 
 
 .header{
-  height: 40vh;
+  height: 100vh;
   width: 100%;
   padding: 0 0%;
-  background: #fff;
   position: relative;
 }
 
@@ -303,13 +302,36 @@ nav{
   width: 140px;
 }
 
+
+
+.header_background{
+  background-color: #ADB5BD;
+  filter: blur(4px);
+  width: auto;
+
+}
+
+
+
 .navigation_links{
   padding: 28px 0;
 }
 
+.navigation_background{
+  height: 650;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+
 .navigation_links li{
   display: inline-block;
   margin: 0 15px
+
 }
 
 .navigation_links li a{  /* Default state of the navigation link */
@@ -355,6 +377,18 @@ nav{
   line-height: 30px;
 }
 
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+
 
 /*
   ADDITIONAL EXPLORATION - ADDING FRONT PAGE IMAGES + DESCRIPTION
@@ -398,6 +432,7 @@ nav{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  padding-top: 40px;
   max-width: 465px;
   font-size: 36px;
   line-height: 10px;
@@ -407,9 +442,11 @@ nav{
 .about_the_resort_description {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
   max-width: 1200px;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
   font-family: 'Metropolis-Regular', sans-serif;
 }
 
