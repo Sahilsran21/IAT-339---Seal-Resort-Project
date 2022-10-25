@@ -47,11 +47,7 @@ body {
 
 .element {
   margin-top: 8rem;
-                             /* Adding border with element class since borders should
-                             only be with specified element sections */
-  border-top-style: solid;
-  border-top-width: 0.15rem;
-  border-top-color: black;
+                            
 }
 
 
@@ -284,8 +280,15 @@ code {
 */
 
 
-.header{
+.main_header{
   height: 100vh;
+  width: 100%;
+  padding: 0 0%;
+  position: relative;
+}
+
+.subheader{
+  height: 20vh;
   width: 100%;
   padding: 0 0%;
   position: relative;

@@ -8,11 +8,13 @@
 </head>
 
 <body>
-  <div class ="header">
+
+
+  <div class ="subheader">
     <nav>
-     <img src = "blepi_logo.png" alt="A logo for the site." class="logo">
+     <img src = "img/blepi_logo.png" alt="A logo for the site." class="blepi_logo">
         <ul class= "navigation_links">
-            <li> <a href="#about_us">About Us</a> </li>
+            <li> <a href="Seal_Resort_Website_Main.html">Home</a> </li>
             <li> <a href="account.html">Account</a> </li>
             <li> <a href="services.html">Services</a> </li>
             <li> <a href="special_offers.html">Special Offers</a> </li>
@@ -20,7 +22,10 @@
             <li> <a href="citations.html">Citations</a> </li>
         </ul>
     </nav>
+  </div>
 
+
+<!-- CHECKOUT CART -->
   <section class= "element">
     <h3 class = "Element_Header"> Checkout Cart </h3>
       <div class= "checkout_container">
@@ -49,18 +54,35 @@
             </fieldset>
       </div>
   </section>
-</section>
 
 
 
+<!-- PAYMENT FORM -->
+<section class= "element">
+  <h3 class = "Element_Header"> Payment Form </h3>
+      <form class = "form" action="#" method= "get">
+        <fieldset class = "account-info">
+          <label> Please confirm your method of payment: </label>
+        </fieldset>
 
+        <fieldset class = "margin-control">
+            <input type="radio" id="visa_debit" name="payment_method" value="Visa Debit" class="form_input">
+              <label for="visa_debit" class="form_label"> Visa Debit </label><br>
+            <input type="radio" id="mastercard" name="payment_method" value="Mastercard" class="form_input">
+              <label for="mastercard" class="form_label"> Mastercard </label><br>
+            <input type="radio" id="paypal" name="payment_method" value="Paypal" class="form_input">
+              <label for="paypal" class="form_label"> Paypal </label><br>
 
+                <h4> <label> Card Number: <input type="text" Name="card_number" class="form_input"> </label> <br>    <!-- Was missing class declaration in label, couldnt change label properties (learned from "Sign Up Form HTML CSS" tutorial) -->
+                <label> Expiry Date: <input type="text" Name="expiry_date" class="form_input"> </label> <br>
+                <label> CVV Number: <input type="text" Name="CVV Number" class="form_input"> </label> </h4> <br><br>
+        </fieldset>
 
-
-
-
-
-
+        <fieldset class = "account-action">
+              <input class="form_button" type="Submit" name="Submit" value="Enter">
+        </fieldset>
+      </form>
+  </section>
 
 
 
