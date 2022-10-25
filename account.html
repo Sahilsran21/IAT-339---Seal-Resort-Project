@@ -31,29 +31,38 @@
 
 
   <!--ACCOUNT LOGIN FORM-->
+  <img src = "img/seal_bar.jpg" alt="A logo for the site." class="back-image">
     <section class="element">
-      <h3 class = "Element_Header"> Submit and Reset Button </h3>       <!-- Used W3schools example for correct syntax -->
-        <form class = "form" action="#" method= "get">
-          <fieldset class = "account-info">
-            <label> Please enter your full name and email address to book a time: </label>
-          </fieldset>
+      <div class= "login_form">
+         <form class="form" action="#" id="login" method="get">
+             <h3 class = "Element_Header"> Login </h3>
+                  <input type="text" name="full_name" class="form_input" autofocus placeholder = "Username or email"> </label> <br><br>
+                  <input type="text" name="password" class="form_input" autofocus placeholder = "Password"> </label> <br><br>
 
-          <fieldset class = "margin-control">
-              <label for="full_name"> Full Name:
-                <input type="text" id="full_name" name="full_name" class="form_input"> </label> <br><br>
-              <label for="email_address"> Email Address:
-                <input type="text" id="email_address" name="email_address" class="form_input"> </label> <br><br>
-          </fieldset>
 
-        <fieldset class = "account-action">
+          <fieldset>
               <input class="form_button" type="Submit" name="Submit" value="Submit">    <!-- Taken from Building Forms by Shay Howe -->
-              <input class="form_button" type="Reset" name="Reset" value="Reset">
-        </fieldset>
+          </fieldset>
+
+          <p class = "form_text">
+            <a href ="#" class="form_link"> Forgot your password? </a>
+          </p>
+
+          <p class = "form_text">
+            <a href ="./" class="form_link" id="LinkCreateAccount"> Don't have an account? Sign up here </a>
+          </p>
+
         </form>
+      </div>
     </section>
 
 
 
     <!--ACCOUNT CREATION FORM-->
+
+
+
+
+
 
 </body>

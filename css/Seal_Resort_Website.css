@@ -3,6 +3,22 @@
   Seal Marina Style Editing - For CSS BASICS
 */
 
+body {
+
+  --color_primary: #07293E;
+  --color_secondary: #256D85;
+  --color_hover: #8FE3CF;
+  --color_button: #2B4865;
+
+
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Metropolis-Regular', sans-serif;
+}
+
+
+
+
 
 /* MODIFICATION #1 - CHANGE DEFAULT FONT */
 
@@ -21,17 +37,12 @@
 }
 
 
-body {
-  font-size: 18px;
-  line-height: 20px;
-  font-family: 'Metropolis-Regular', sans-serif;
-}
-
 .Element_Header {
   text-align: center;
   font-size: 26px;
   line-height: 10px;
   font-family: 'Metropolis-Bold';
+  padding-bottom: 10px;
 }
 
 .element_subheader {
@@ -42,12 +53,11 @@ body {
 }
 
 
-
 /* MODIFICATION #2 - ADD SPACE BETWEEN SECTION ELEMENTS */
 
 .element {
   margin-top: 8rem;
-                            
+
 }
 
 
@@ -135,6 +145,10 @@ body {
 
 .form {
   margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border: 1px solid #07293E;
   border-radius: 5px;
   font: 16px 'Metropolis-Regular', sans-serif;
@@ -144,8 +158,15 @@ body {
 }
 
 .form_input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
   border: 3px solid #07293E;
   border-radius: 0.5rem;
+  outline: none;
+  background: #eeeeee;
+  font-size: 16px;
 }
 
 .form_input:hover {
@@ -157,14 +178,16 @@ body {
 }
 
 .form_button {
-background: linear-gradient(#2B4865, #002B5B);
-border: 0;
-color: #fff;
-cursor: pointer;
-font-weight: bold;
-float: left;
-padding: 8px 16px;
-margin-left: 8px;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: #2B4865;
 }
 
 .form_button:hover {
@@ -174,6 +197,27 @@ margin-left: 8px;
 .form_button:focus {
   background: #256D85;
 }
+
+.form_text {
+  text-align: center;
+}
+
+.form_link {
+  color: var(--color_primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form_link:hover {
+  text-decoration: underline;
+}
+
+.form_link:focus {
+  text-decoration: none;
+}
+
+
+
 
 
 
@@ -206,15 +250,11 @@ fieldset {
 
 .account-info input {
   background: #ff3424;
-
-
   color: #07293E;
   padding: 4px;
   margin-top: 6px;
   width: 100%;
 }
-
-
 
 .account-action {
   background: #f0f0f2;
@@ -222,10 +262,6 @@ fieldset {
   padding: 20px;
 }
 
-.account-action .button {
-
-
-}
 
 
 
@@ -288,7 +324,7 @@ code {
 }
 
 .subheader{
-  height: 20vh;
+  height: 5vh;
   width: 100%;
   padding: 0 0%;
   position: relative;
@@ -305,14 +341,10 @@ nav{
   width: 100px;
 }
 
-
-
-.header_background{
-  background-color: #ADB5BD;
-  filter: blur(4px);
-  width: auto;
-
+.nav-background {
+  background-color: #f2f2f2;
 }
+
 
 
 
@@ -320,21 +352,9 @@ nav{
   padding: 28px 0;
 }
 
-.navigation_background{
-  height: 650;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-
-
 .navigation_links li{
   display: inline-block;
   margin: 0 15px
-
 }
 
 .navigation_links li a{  /* Default state of the navigation link */
@@ -342,7 +362,7 @@ nav{
   color: #256D85;
   padding: 5px 0;
   position: relative;
-
+  opacity: 1;
 }
 
 .navigation_links li a::after{  /* Underline below each navigation link header */
@@ -391,6 +411,18 @@ nav{
     z-index: -100;
 }
 
+.back-image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    filter: blur(3px);
+}
+
 
 
 /*
@@ -436,9 +468,9 @@ nav{
   margin-right: auto;
   margin-bottom: 30px;
   padding-top: 40px;
-  max-width: 465px;
   font-size: 36px;
-  line-height: 10px;
+  line-height: 40px;
+  text-align: center;
   font-family: 'Metropolis-Bold';
 }
 
@@ -452,6 +484,8 @@ nav{
   text-align: center;
   font-family: 'Metropolis-Regular', sans-serif;
 }
+
+
 
 
 
