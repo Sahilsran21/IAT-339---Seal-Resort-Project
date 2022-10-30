@@ -8,12 +8,24 @@ body {
   --color_primary: #07293E;
   --color_secondary: #256D85;
   --color_hover: #8FE3CF;
+  --mint_gradient: linear-gradient(#fff, #8FE3CF);
   --color_button: #2B4865;
+  --color_light_mint: #D3FAED;
+  --color_light_grey: #ADB5BD;
+  --color_white: #FFFFFF;
+  --color_page_background: #F8F9FA;
 
 
   font-size: 18px;
   line-height: 20px;
   font-family: 'Metropolis-Regular', sans-serif;
+}
+
+
+
+img{
+  width: 100%;
+  display: block;
 }
 
 
@@ -154,7 +166,7 @@ body {
   font: 16px 'Metropolis-Regular', sans-serif;
   overflow: hidden;
   width: 400px;
-  background: linear-gradient(#fff, #8FE3CF);   /*Gradient from Shay Howe's login screen example from Building Forms */
+  background: var(--mint_gradient);   /*Gradient from Shay Howe's login screen example from Building Forms */
 }
 
 .form_input {
@@ -217,10 +229,6 @@ body {
 }
 
 
-
-
-
-
 fieldset {
   border: 0;
   margin: 0;
@@ -233,44 +241,46 @@ fieldset {
 
 
 
-
 /* Styling for the text label and inputs */
 .account-info {
-  padding: 20px 20px 0px 20px;
+ padding: 20px 20px 0px 20px;
 }
 
 .account-info label {
-  color: #256D85;
-  font-size: 18px;
-  display: block;
+ color: #1c558e;
+ font-size: 18px;
+ display: block;
 
-  font-weight: bold;
-  margin-bottom: 10px;
+ font-weight: bold;
+ margin-bottom: 10px;
 }
 
 .account-info input {
-  background: #ff3424;
-  color: #07293E;
-  padding: 4px;
-  margin-top: 6px;
-  width: 100%;
+ background: #ff3424;
+
+ color: #636466;
+ padding: 4px;
+ margin-top: 6px;
+ width: 100%;
 }
 
 .account-action {
-  background: #f0f0f2;
-  border-top: 1px solid #c6c7cc;
-  padding: 20px;
+ background: #f0f0f2;
+ border-top: 1px solid #c6c7cc;
+ padding: 20px;
 }
-
-
-
 
 .account-action label {
-  color: #7c7c80;
-  font-size: 18px;
-  float: left;
-  margin: 20px 0 0 20px;
+ color: #7c7c80;
+ font-size: 18px;
+ float: left;
+ margin: 20px 0 0 20px;
 }
+
+
+
+
+
 
 .margin-control {  /* SET SPECIFICALLY FOR ELEMENT 5, ELEMENT 12, AND ELEMENT 13 */
  font-size: 16px;
@@ -712,4 +722,178 @@ nav{
   overflow: hidden;
   width: 550px;
   background: linear-gradient(#fff, #8FE3CF);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTS/SERVICES PAGE ELEMENTS */
+
+.product_container{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.product_title_large
+.product_title_medium
+.product_title_small{
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+}
+
+.product_title_large{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.3rem 0;
+  opacity: 0.9;
+}
+
+.product_title_medium {
+  font-size: 2rem;
+}
+
+.product_title_small {
+  font-weight: 100;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.product_text_light {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  opacity: 0.5;
+  margin: 0.4rem 0;
+}
+
+
+
+
+
+.products{
+    background: var(--color_page_background);
+    padding: 3.2rem 0;
+}
+
+.products .product_text_light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+
+.product{
+    margin: 2rem;
+    position: relative;
+}
+
+.product_content{
+    background: var(--color_light_mint);
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+
+.product_img{
+    background: var(--color_white);
+    box-shadow: 0 0 20px 10px var(--color_white);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+
+.product_buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.button_cart, .button_buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.button_cart{
+    background: black;
+    color: white;
+}
+
+.button_cart:hover{
+    background: var(--color_hover);
+}
+
+.button_buy{
+    background: white;
+}
+
+.button_buy:hover{
+    background: var(--color_hover);
+    color: #fff;
+}
+
+
+.product_info{
+    background: white;
+    padding: 2rem;
+}
+
+.product_info_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 1200;
+
+}
+
+.product_price{
+    padding-top: 0.2rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+
+.product_price :first-of-type{
+    text-decoration: line-through;
+    color: var(--color_hover);
+}
+
+.product_img img{
+  transition: transform 0.6s ease;
+}
+
+.product:hover .product_img img{
+    transform: scale(1.1);
+}
+
+.product:hover .product_img{
+    background: var(--color_hover);
+}
+
+.product:hover .product_buttons{
+    opacity: 1;
 }
