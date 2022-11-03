@@ -26,35 +26,110 @@
   </div>
 
 
-<!-- CHECKOUT CART -->
+
+
   <section class= "element">
-    <h3 class = "Element_Header"> Checkout Cart </h3>
-      <div class= "checkout_container">
-        <fieldset class = "account-info">
-          <label> Checkout Cart </label>
-        </fieldset>
+    <h3 class = "product_title_large"> Checkout Cart </h3>
 
-            <div class= "checkout_grid">
-              <ul class = "checkout_grid_element">
-                  <li> Seal Pool - Child (x1) </li>
-                  <li> Seal Pool - Adult (x2) </li>
-                  <br>
-                  <li class = "checkout_text_control"> Grand Total </li>
-              </ul>
+<!-- Checkout Item Details  -->
+<div class="checkout_small_container  checkout_page">
+  <table>
+    <tr>
+        <th> Service </th>
+        <th> Quantity </th>
+        <th> Subtotal </th>
+    </tr>
 
-              <ul class = "checkout_grid_element">
-                  <li> $40.00 </li>
-                  <li> $100.00 </li>
-                  <br>
-                  <li class = "checkout_text_control"> $140.00 </li>
-              </ul>
+
+    <!-- ITEM 1 -->
+    <tr>
+        <td>
+            <div class = "checkout_info">
+                <img src="img/hiyori.jpeg" alt="Product Image">
+                  <div>
+                      <p> Daily Access to the seal pool - Teen </p>
+                      <small> Price: $45.00 </small>
+                      <br>
+                      <a href= ""> Remove </a>
+                  </div>
             </div>
+         </td>
+        <td> <input type= "number" value= "1"> </td>
+        <td> $45.00 </td>
+    </tr>
 
-            <fieldset class = "account-action">
-                  <input class="form_button" type="Submit" name="Submit" value="Checkout">
-            </fieldset>
-      </div>
-  </section>
+
+    <!-- ITEM 2 -->
+    <tr>
+        <td>
+            <div class = "checkout_info">
+                <img src="img/hiyori.jpeg" alt="Product Image">
+                  <div>
+                      <p> Daily Access to the seal pool - Adult </p>
+                      <small> Price: $50.00 </small>
+                      <br>
+                      <a href= ""> Remove </a>
+                  </div>
+            </div>
+         </td>
+        <td> <input type= "number" value= "1"> </td>
+        <td> $50.00 </td>
+    </tr>
+
+
+    <!-- ITEM 3 -->
+    <tr>
+        <td>
+            <div class = "checkout_info">
+                <img src="img/niko.jpg" alt="Product Image">
+                  <div>
+                      <p> Monthly Platinum Pass - Adult </p>
+                      <small> Price: $70.00 </small>
+                      <br>
+                      <a href= ""> Remove </a>
+                  </div>
+            </div>
+         </td>
+        <td> <input type= "number" value= "1"> </td>
+        <td> $70.00 </td>
+    </tr>
+  </table>
+
+
+  <div class = "checkout_total_price">
+    <table>
+      <tr>
+          <td> Subtotal </td>
+          <td> $165.00 </td>
+      </tr>
+
+      <tr>
+          <td> PST/GST </td>
+          <td> $25.00 </td>
+      </tr>
+
+      <tr>
+          <td> Grand Total </td>
+          <td> $190.00 </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+  <fieldset>
+        <input class="checkout_button" type="Submit" name="Submit" value="Place Order">
+  </fieldset>
+
+</div>
+</section>
+
+
+
+
+
+
 
 
 
