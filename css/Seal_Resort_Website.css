@@ -972,20 +972,25 @@ footer{
 }
 
 .footer_logo{
-  width: 80px;
+  width: 65px;
   margin-bottom: 30px;
 }
 
 .footer_column p{
   list-style: none;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   font-size: 14px;
   max-width: 200px;   //Controls the 1st paragraph so it balances white space with the rest of the elements
+
 }
 
 .footer_column p a{
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff;
+}
+
+.footer_column p:hover a {
+  font-weight: bolder;
 }
 
 .footer_column form{
@@ -1023,7 +1028,15 @@ footer{
   color: #ccc;
 }
 
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(---color_light_grey);
+  margin: 20px auto;
 
+}
 
-
+.copyright{
+  text-align: center;
+  margin-bottom: -15px;
 }
