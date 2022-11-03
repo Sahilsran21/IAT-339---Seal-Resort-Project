@@ -763,16 +763,17 @@ nav{
 
 .product_title_small {
   font-weight: 100;
-  font-size: 1.8rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+
 }
 
 .product_text_light {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
-  opacity: 0.5;
-  margin: 0.4rem 0;
+  opacity: 0.7;
+  margin: 0.2rem 0;
 }
 
 
@@ -815,11 +816,11 @@ nav{
     display: flex;
     justify-content: center;
     margin-top: 1.4rem;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.6s ease;
 }
 
-.button_cart, .button_buy{
+.button_cart, .button_details{
     background: transparent;
     border: 1px solid black;
     padding: 0.8rem 0;
@@ -832,7 +833,7 @@ nav{
 }
 
 .button_cart{
-    background: black;
+    background: var(--color_button);
     color: white;
 }
 
@@ -840,11 +841,11 @@ nav{
     background: var(--color_hover);
 }
 
-.button_buy{
+.button_details{
     background: white;
 }
 
-.button_buy:hover{
+.button_details:hover{
     background: var(--color_hover);
     color: #fff;
 }
@@ -865,8 +866,7 @@ nav{
     color: black;
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.3rem;
     font-weight: 800;
 
 }
