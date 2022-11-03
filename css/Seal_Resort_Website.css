@@ -867,7 +867,7 @@ nav{
     text-decoration: none;
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 1200;
+    font-weight: 800;
 
 }
 
@@ -942,9 +942,9 @@ footer{
     width: 100%;
     position: bottom;
     bottom: 0;
-    background: linear-gradient(to right, var(--color_secondary), var(--color_light_grey));
+    background: linear-gradient(to right, var(--color_secondary), var(--color_button));
     color: #fff;
-    padding: 30px 0 30px;
+    padding: 10px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -960,7 +960,7 @@ footer{
 }
 
 .footer_column{
-    flex-basis: 35%;
+    flex-basis: 22%;
     padding: 10px;
 }
 
@@ -968,7 +968,7 @@ footer{
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
-  text-align: center
+  font-size: 19px;
 }
 
 .footer_logo{
@@ -976,14 +976,54 @@ footer{
   margin-bottom: 30px;
 }
 
-.footer_column ul li{
+.footer_column p{
   list-style: none;
   margin-bottom: 12px;
-  text-align: center
+  font-size: 14px;
+  max-width: 200px;   //Controls the 1st paragraph so it balances white space with the rest of the elements
 }
 
-.footer_column ul li a{
+.footer_column p a{
   text-decoration: none;
-  margin-bottom: 12px;
-  text-align: center
+  color: #fff;
+}
+
+.footer_column form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.footer_column form .far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer_column form input{
+  width: 100%;
+  background: transparent;
+  color: var(--color_light_grey);
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer_column form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer_column form button .fas{
+  font-size: 16px;
+  color: #ccc;
+}
+
+
+
+
 }
