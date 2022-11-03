@@ -732,8 +732,8 @@ nav{
 
 
 
-
-
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 
 /* PRODUCTS/SERVICES PAGE ELEMENTS */
 
@@ -896,4 +896,94 @@ nav{
 
 .product:hover .product_buttons{
     opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+
+    .product_items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+
+    .product_items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .products .product_text_light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product_items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* ANIMATED WEBSITE FOOTER */
+footer{
+    width: 100%;
+    position: bottom;
+    bottom: 0;
+    background: linear-gradient(to right, var(--color_secondary), var(--color_light_grey));
+    color: #fff;
+    padding: 30px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer_column{
+    flex-basis: 35%;
+    padding: 10px;
+}
+
+.footer_column h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center
+}
+
+.footer_logo{
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.footer_column ul li{
+  list-style: none;
+  margin-bottom: 12px;
+  text-align: center
+}
+
+.footer_column ul li a{
+  text-decoration: none;
+  margin-bottom: 12px;
+  text-align: center
 }
