@@ -27,7 +27,7 @@
 
 
 
-
+<!-- CHECKOUT CART - REFERENCING How To Make Shopping Cart Page On eCommerce Website by Easy Tutorials -->
   <section class= "element">
     <h3 class = "product_title_large"> Checkout Cart </h3>
 
@@ -114,51 +114,110 @@
       </tr>
     </table>
   </div>
+</div>
 
 
 
 
-  <fieldset>
-        <input class="checkout_button" type="Submit" name="Submit" value="Place Order">
-  </fieldset>
 
+<!-- PAYMENT CONTAINER - REFERENCING Payment Form Using HTML & CSS | Full Responsive | by Sagar Developer -->
+<div class = "payment_container">
+  <h3 class = "product_title_large"> Payment Form </h3>
+  <form action="" method = "POST">
+
+        <!-- ACCOUNT INFORMATION START -->
+        <h4> Account </h4>
+          <div class="payment_input_group">
+               <div class="payment_input_box">
+                   <input type="text" placeholder="Full Name" required class="name">
+                   <i class="fa fa-user icon"></i>
+               </div>
+               <div class="payment_input_box">
+                   <input type="text" placeholder="Name on Card" required class="name">
+                   <i class="fa fa-user icon"></i>
+               </div>
+           </div>
+
+           <div class="payment_input_group">
+               <div class="payment_input_box">
+                   <input type="email" placeholder="Email Address" required class="name">
+                   <i class="fa fa-envelope icon"></i>
+               </div>
+           </div>
+
+           <div class="payment_input_group">
+               <div class="payment_input_box">
+                   <input type="text" placeholder="Address" required class="name">
+                   <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+               </div>
+           </div>
+
+           <div class="payment_input_group">
+               <div class="payment_input_box">
+                   <input type="text" placeholder="City" required class="name">
+                   <i class="fa fa-institution icon"></i>
+               </div>
+           </div>
+
+           <div class="payment_input_group">
+              <div class="payment_input_box">
+                  <h4>Date Of Birth</h4>
+                  <input type="text" placeholder="DD" required class="date_of_birth">
+                  <input type="text" placeholder="MM" required class="date_of_birth">
+                  <input type="text" placeholder="YYYY" required class="date_of_birth">
+              </div>
+            </div>
+           <!--Account Information End-->
+
+            <!--Payment Details Start-->
+            <div class="payment_input_group">
+                <div class="payment_input_box">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <label for="bc1"><span>
+                            <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <label for="bc2"><span>
+                            <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                </div>
+            </div>
+            <div class="payment_input_group">
+                <div class="payment_input_box">
+                    <input type="tel" name="" class="name" placeholder="Card Number eg:1111-2222-3333-4444" required>
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="payment_input_group">
+                <div class="payment_input_box">
+                    <input type="tel" name="" class="name" placeholder="Card CVC" required>
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+
+            <div class="payment_input_group">
+                <div class="payment_input_box">
+                    <div class="input_box">
+                        <input type="number" placeholder="Exp Month" required class="name">
+                        <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="payment_input_box">
+                    <input type="number" placeholder="Exp Year" required class="name">
+                    <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!--Payment Details End-->
+
+            <fieldset>
+                <input class="form_button" type="Submit" name="Place Order" value="Place Order">
+            </fieldset>
+
+    </form>
 </div>
 </section>
 
 
 
-
-
-
-
-
-
-<!-- PAYMENT FORM -->
-<section class= "element">
-  <h3 class = "Element_Header"> Payment Form </h3>
-      <form class = "form" action="#" method= "get">
-        <fieldset class = "account-info">
-          <label> Please confirm your method of payment: </label>
-        </fieldset>
-
-        <fieldset class = "margin-control">
-            <input type="radio" id="visa_debit" name="payment_method" value="Visa Debit" class="form_input">
-              <label for="visa_debit" class="form_label"> Visa Debit </label><br>
-            <input type="radio" id="mastercard" name="payment_method" value="Mastercard" class="form_input">
-              <label for="mastercard" class="form_label"> Mastercard </label><br>
-            <input type="radio" id="paypal" name="payment_method" value="Paypal" class="form_input">
-              <label for="paypal" class="form_label"> Paypal </label><br>
-
-                <h4> <label> Card Number: <input type="text" Name="card_number" class="form_input"> </label> <br>    <!-- Was missing class declaration in label, couldnt change label properties (learned from "Sign Up Form HTML CSS" tutorial) -->
-                <label> Expiry Date: <input type="text" Name="expiry_date" class="form_input"> </label> <br>
-                <label> CVV Number: <input type="text" Name="CVV Number" class="form_input"> </label> </h4> <br><br>
-        </fieldset>
-
-        <fieldset class = "account-action">
-              <input class="form_button" type="Submit" name="Submit" value="Enter">
-        </fieldset>
-      </form>
-  </section>
 
 
 
