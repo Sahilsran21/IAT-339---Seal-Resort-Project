@@ -26,6 +26,11 @@
   </div>
 
 
+
+
+
+
+
   <!-- PRODUCT/SERVICE LISTING -->
     <section class="element">
           <div class = "products">
@@ -38,6 +43,22 @@
 
                 <div class = "product_items">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-------------------------------------------------------------------------------->
 
                   <!--DAILY SEAL POOL - CHILD-->
@@ -47,11 +68,12 @@
                           <img src="../img/hiyori.jpeg" alt="Product Image">
                       </div>
 
+                            <!-- Nested button HTML property to ensure correct format, with the href property as the parent to enable link functionality -->
                         <div class = "product_buttons">
-                            <button type = "button" class = "button_cart"> add to cart </button>
-                            <button type = "button" class = "button_details"> see details </button>
+                            <button type = "button" class = "button_cart"> Add to cart </button>
+                            <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                         </div>
-                     </div>
+                    </div>
 
                       <div class = "product_info">
                           <div class = "product_info_top">
@@ -60,7 +82,7 @@
                             <a href="#" class="product_name"> Child (4 - 12) </a>
                             <p class = "product_price"> $40.00 </p>
                       </div>
-                    </div>
+                  </div>
                   <!--END OF DAILY SEAL POOL - CHILD-->
 
 
@@ -73,8 +95,8 @@
                         </div>
 
                           <div class = "product_buttons">
-                              <button type = "button" class = "button_cart"> add to cart </button>
-                              <button type = "button" class = "button_details"> see details </button>
+                              <button type = "button" class = "button_cart"> Add to cart </button>
+                              <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
 
                             <!-- <fieldset>
                                 <input class="button_cart" type="button" name="Add To Cart" value="Add to Cart">
@@ -103,7 +125,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -129,7 +151,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -153,7 +175,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -177,7 +199,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -203,7 +225,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -226,7 +248,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -249,7 +271,7 @@
 
                             <div class = "product_buttons">
                                 <button type = "button" class = "button_cart"> add to cart </button>
-                                <button type = "button" class = "button_details"> see details </button>
+                                <a href="service_details.html"> <button type = "button" class = "button_details"> See details </button>  </a>
                             </div>
                          </div>
 
@@ -267,6 +289,63 @@
                     </div>
                   </div>
               </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- NOTIFICATION FOR ADDING ITEMS TO CART -->
+        <div class = "alert_box hide hidden">
+                <span class="fas fa-solid fa-heart"> </span>
+                <span class ="alert_box_message"> Item has successfully been added to cart! </span>
+                  <span class = "close_alert_button">
+                    <span class ="fas fa-times"> </span>
+                  </span>
+        </div>
+
+
+
+       <script>
+         const cartButton=document.querySelector(".button_cart");
+         const alertBox=document.querySelector(".alert_box");
+         const closeButton=document.querySelector(".close_alert_button")
+         let timer;
+
+         cartButton.addEventListener("click",function () {
+              showAlertBox();
+         })
+
+         closeButton.addEventListener("click",function () {
+              hideAlertBox();
+              clearTimeout(timer);
+         })
+
+         function showAlertBox(){
+            alertBox.classList.remove("hide");
+            alertBox.classList.add("show");
+            // hide animation onload
+
+            if(alertBox.classList.contains("hidden")){
+                alertBox.classList.remove("hidden");
+            }
+            timer=setTimeout(function(){
+                hideAlertBox();
+            },5000)
+         }
+
+         function hideAlertBox(){
+           alertBox.classList.remove("show");
+            alertBox.classList.add("hide");
+         }
+
+         </script>
+
+
+
 
 
 
@@ -285,20 +364,20 @@
                 </div>
 
                 <div class = "footer_column">
-                  <h3> Attribution <div class= "underline"> <span></span></div> </h3>
+                  <h3> Attribution <div class= "underline"> </div> </h3>
                       <p> IAT 339 - Fall 2022 </p>
                       <p> Sahil Sran </p>
                       <p> Salil Agnihotri </p>
                 </div>
 
                 <div class = "footer_column">
-                  <h3> Resources <div class= "underline"> <span></span></div> </h3>
+                  <h3> Resources <div class= "underline"> </div> </h3>
                       <p> <a href="citations.html"> Citations </a></p>
                       <p> <a href="Seal_Marina_Style_Guide.html"> Blepi Style Guide </a></p>
                 </div>
 
                 <div class = "footer_column">
-                  <h3> Contact Us <div class= "underline"> <span></span></div> </h3>
+                  <h3> Contact Us <div class= "underline"> </div> </h3>
                   <form>
                       <i class="far fa-regular fa-envelope"></i>
                       <input type="email" placeholder= "Enter your email id" required>

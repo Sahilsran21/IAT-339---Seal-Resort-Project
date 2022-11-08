@@ -23,6 +23,7 @@ body {
 
 
 
+
 img{
   width: 100%;
   display: block;
@@ -820,7 +821,7 @@ nav{
     transition: opacity 0.6s ease;
 }
 
-.button_cart, .button_details{
+.button_cart, .button_details {
     background: transparent;
     border: 1px solid black;
     padding: 0.8rem 0;
@@ -849,6 +850,150 @@ nav{
     background: var(--color_hover);
     color: #fff;
 }
+
+
+/* ALERT NOTIFICATION FOR "ADD TO CART" BUTTON */
+
+.my-btn{
+	margin:0;
+	padding:400px;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.alert_box {
+    background: var(--color_secondary);
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-left: 8px solid var(--color_button);
+}
+
+.alert_box .close_alert_button{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color_button);
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.alert_box .alert_box_message{
+    padding: 0 20px;
+    font-size: 18px;
+    color: var(--color_white);
+}
+
+.alert_box .fa-heart{
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-size: 25px;
+}
+
+.close_alert_button{
+  background: var(--color_white);
+}
+
+.close_alert_button .fa-times{
+    color: var(--color_white);
+    font-size: 22px;
+    line-height: 40px;
+}
+
+
+
+.alert_box.show::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: var(--color_hover);
+  width: 90%;
+  box-sizing: border-box;
+	animation: hideMeter 5s linear;
+}
+
+@keyframes hideMeter {
+	0%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+
+
+ /* Show and hide CSS must be written together with alert_box as such */
+.alert_box.show{
+	animation: showAlert 1s ease forwards;
+}
+@keyframes showAlert{
+	0%{
+		transform: translateX(100%);
+	}
+	40%{
+		transform: translateX(-15%);
+	}
+	80%{
+	   transform: translateX(0%);
+	}
+	100%{
+	   transform: translateX(-10px);
+	}
+}
+
+
+
+.alert_box.hide{
+	animation: hideAlert 1s ease forwards;
+}
+
+@keyframes hideAlert{
+	0%{
+		transform: translateX(-10px);
+	}
+	40%{
+		transform: translateX(0%);
+	}
+	80%{
+		transform: translateX(-15%);
+	}
+	100%{
+	   transform: translateX(100%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .product_info{
@@ -1052,16 +1197,6 @@ hr {
   overflow: hidden;
 }
 
-.underline span{
-  width: 15px;
-  height: 100%;
-  background: #fff;
-  border-radius: 3px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  animation: moving 2s linear infinite;
-}
 
 @keyframes moving{
   0%{
