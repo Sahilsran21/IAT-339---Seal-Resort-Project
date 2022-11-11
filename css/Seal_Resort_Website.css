@@ -13,6 +13,7 @@ body {
   --color_light_mint: #D3FAED;
   --color_light_grey: #ADB5BD;
   --color_white: #FFFFFF;
+  --color_black: #000000;
   --color_page_background: #F8F9FA;
 
 
@@ -811,7 +812,7 @@ nav{
     cursor: pointer;
 }
 
-.product_img{
+.product_img {
     background: var(--color_white);
     box-shadow: 0 0 20px 10px var(--color_white);
     width: 200px;
@@ -819,6 +820,14 @@ nav{
     margin: 0 auto;
     border-radius: 50%;
     transition: background 0.5s ease;
+}
+
+.product_img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: background 0.5s ease;
+
 }
 
 .product_buttons{
@@ -1694,4 +1703,39 @@ th:last child{
 
 .login_form ::placeholder{
   color: black;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* REFERENCES LIST */
+
+
+.references_list_backdrop{
+  width: 100%;
+  height: 140vh;
+  background-image: linear-gradient(rgba(0,0,0,0.1), var(--color_black)), url(../img/seal_resort_night.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.references_list{
+  max-width: 1100px;
+}
+
+.references_list ul li{
+  list-style: none;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: var(--color_white);
+}
+
+.references_list ul li a{
+  text-decoration: underline;
+  color: #fff;
 }
