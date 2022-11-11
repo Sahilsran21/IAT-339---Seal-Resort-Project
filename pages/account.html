@@ -17,6 +17,7 @@
     <div class ="subheader">
       <nav>
        <img src = "../img/blepi_logo.png" alt="A logo for the site." class="blepi_logo">
+        <div class = "nav-background">
           <ul class= "navigation_links">
               <li> <a href="../Seal_Resort_Website_Main.html">Home</a> </li>
               <li> <a href="account.html">Account</a> </li>
@@ -26,36 +27,52 @@
               <li> <a href="checkout.html">Checkout</a> </li>
               <li> <a href="citations.html">Citations</a> </li>
           </ul>
+        </div>
       </nav>
     </div>
 
 
 
-  <!--ACCOUNT LOGIN FORM-->
-  <img src = "../img/seal_bar.jpg" alt="A logo for the site." class="back-image">
-    <section class="element">
-      <div class= "login_form">
-         <form class="form" action="#" id="login" method="get">
-             <h3 class = "Element_Header"> Login </h3>
-                  <input type="text" name="full_name" class="form_input" autofocus placeholder = "Username or email"> </label> <br><br>
-                  <input type="text" name="password" class="form_input" autofocus placeholder = "Password"> </label> <br><br>
 
 
-          <fieldset>
-              <input class="form_button" type="Submit" name="Submit" value="Submit">    <!-- Taken from Building Forms by Shay Howe -->
-          </fieldset>
 
-          <p class = "form_text">
-            <a href ="#" class="form_link"> Forgot your password? </a>
-          </p>
 
-          <p class = "form_text">
-            <a href ="./" class="form_link" id="LinkCreateAccount"> Don't have an account? Sign up here </a>
-          </p>
 
-        </form>
-      </div>
-    </section>
+
+        <!-- CONTACT FORM - Referencing "How To Make A Contact Form Using HTML And & CSS | Animated Label Contact Form" by Easy Tutorials -->
+
+        <div class = "login_form_backdrop">
+          <div class = "login_form">
+            <form>
+              <h3 class = "product_title_large"> Login </h3>
+
+                <div class = "login_input_group">
+                  <input type="text" autofocus placeholder="Username or email" required class="log">  <i class="fas fa-user icon"></i>
+                </div>
+
+                <div class = "login_input_group">
+                  <input type="text" autofocus placeholder="Password" required class="log">  <i class=" fas fa-solid fa-lock icon"></i>
+                </div>
+
+               <fieldset>
+                  <input class="form_button" type="Submit" name="Submit" value="Submit">
+               </fieldset>
+
+               <p class = "form_text">
+                 <a href ="#" class="form_link"> Forgot your password? </a>
+               </p>
+
+               <p class = "form_text">
+                 <a href ="./" class="form_link" id="LinkCreateAccount"> Don't have an account? Sign up here </a>
+               </p>
+
+
+            </form>
+          </div>
+        </div>
+
+
+
 
 
 
