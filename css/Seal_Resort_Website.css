@@ -37,7 +37,7 @@ body {
 }
 
 code {
-  background-color: #EEE;
+  background-color: var(--color_light_grey);
   padding: 0.5rem;
   display: block;
 }
@@ -61,14 +61,14 @@ img{
   }
 
   nav a {
-    box-shadow: inset 0 0 0 0 #256D85;
-    color: #256D85;
+    box-shadow: inset 0 0 0 0 var(--color_secondary);
+    color: var(--color_secondary);
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
                               /* Sliding element referenced from 6 creative ideas for CSS Link Hover */
   nav a:hover {
-    box-shadow: inset 450px 0 0 0 #8FE3CF;
-    color: white;
+    box-shadow: inset 450px 0 0 0 var(--color_hover);
+    color: var(--color_white);
   }
 
 
@@ -90,7 +90,7 @@ img{
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid black;
+  border: 1px solid var(--color_black);
   border-radius: 5px;
   font: 16px 'Metropolis-Regular', sans-serif;
   overflow: hidden;
@@ -103,19 +103,19 @@ img{
   width: 100%;
   padding: 0.75rem;
   box-sizing: border-box;
-  border: 3px solid #07293E;
+  border: 3px solid var(--color_primary);
   border-radius: 0.5rem;
   outline: none;
-  background: #eeeeee;
+  background: var(--color_light_grey);
   font-size: 16px;
 }
 
 .form_input:hover {
-  border-color: #8FE3CF;
+  border-color: var(--color_hover);
 }
 
 .form_input:focus {     /* Changes text colour on text input bars */
-  border: 4px solid #002B5B;
+  border: 4px solid var(--color_black);
 }
 
 .form_button {
@@ -123,20 +123,20 @@ img{
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--color_white);
   border: 0;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  background: #2B4865;
+  background: var(--color_button);
 }
 
 .form_button:hover {
-  background: #8FE3CF;
+  background: var(--color_hover);
 }
 
 .form_button:focus {
-  background: #256D85;
+  background: var(--color_secondary);
 }
 
 .form_text {
@@ -161,72 +161,6 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-}
-
-
-
-
-
-/*--------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------*/
-
-/* STYLING FOR CONTROLING TEXT INPUT AND LABEL ELEMENTS */
-
-.account-info {
- padding: 20px 20px 0px 20px;
-}
-
-.account-info label {
- color: #1c558e;
- font-size: 18px;
- display: block;
-
- font-weight: bold;
- margin-bottom: 10px;
-}
-
-.account-info input {
- background: #ff3424;
-
- color: #636466;
- padding: 4px;
- margin-top: 6px;
- width: 100%;
-}
-
-.account-action {
- background: #f0f0f2;
- border-top: 1px solid #c6c7cc;
- padding: 20px;
-}
-
-.account-action label {
- color: #7c7c80;
- font-size: 18px;
- float: left;
- margin: 20px 0 0 20px;
-}
-
-.margin-control {  /* SET SPECIFICALLY FOR ELEMENT 5, ELEMENT 12, AND ELEMENT 13 */
- font-size: 16px;
- border: 0;
- margin-left: 20px;
- margin-bottom: 10px;
- padding: 0;
-}
-
-.text-control {
-  font-size: 16px;
-  max-width: 320px;
-  padding-bottom: 15px;
-}
-
-.bold-text-control {
-  font-weight: bold;
-  font-size: 16px;
-  max-width: 320px;
-  padding-bottom: 15px;
-  padding-top: 15px;
 }
 
 
@@ -265,7 +199,7 @@ nav{
 }
 
 .nav-background {
-  background-color: #f2f2f2;
+  background-color: var(--color_page_background);
 }
 
 .navigation_links{
@@ -279,7 +213,7 @@ nav{
 
 .navigation_links li a{  /* Default state of the navigation link */
   text-decoration: none;
-  color: #256D85;
+  color: var(--color_secondary);
   padding: 5px 0;
   position: relative;
   opacity: 1;
@@ -294,8 +228,8 @@ nav{
 }
 
 .navigation_links li a:hover {
-  box-shadow: inset 300px 0 0 0 #2ec4b6;
-  color: white;
+  box-shadow: inset 300px 0 0 0 var(--color_hover);
+  color: var(--color_white);
 }
 
 .page_title{
@@ -306,7 +240,7 @@ nav{
   width: 90%;
   max-width: 900px;
   transform: translate(-50%, -50%);
-  color: #256D85;
+  color: var(--color_primary);
 }
 
 .page_title h1{
@@ -408,61 +342,16 @@ nav{
 }
 
 
+
+
+
+
+
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
  /* COMBINED ELEMENTS SECTION */
-
-/*--------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------*/
-
-/* SERVICES LISTING ELEMENT */
-
-.services_grid {
-  --gap: 30px;
-  --col_count: 2;
-  --row_height: 500px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
-  display: grid;
-  grid-template-columns: repeat(var(--col_count), 1fr);
-  grid-auto-rows: var(--row_height);
-  gap: var(--gap);
-}
-
-.services_grid > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.services_grid_element {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Figured out image sizing using Shaping Design tutorial on resizing images in CSS */
-.services_image_size {
-  height: auto;
-  max-width: 100%;
-}
-
-.services_text_control {
-  font-weight: bold;
-  font-size: 14px;
-  max-width: 700px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-}
-
-
-
-
-
 
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
@@ -495,18 +384,22 @@ nav{
   text-align: center;
   padding: 1.3rem 0;
   opacity: 0.9;
-  color: #fff
+  color: var(--color_white);
 }
 
-.product_title_medium {
+.product_title_medium{
   font-size: 2rem;
+}
+
+.product_title_medium_centered{
+  font-size: 2rem;
+  text-align: center;
 }
 
 .product_title_small {
   font-weight: 100;
   font-size: 1.5rem;
   line-height: 1.8rem;
-
 }
 
 .product_text_light {
@@ -567,7 +460,7 @@ nav{
 
 .button_cart, .button_details {
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--color_black);
     padding: 0.8rem 0;
     width: 125px;
     font-family: inherit;
@@ -579,7 +472,7 @@ nav{
 
 .button_cart{
     background: var(--color_button);
-    color: white;
+    color: var(--color_white);
 }
 
 .button_cart:hover{
@@ -587,12 +480,12 @@ nav{
 }
 
 .button_details{
-    background: white;
+    background: var(--color_white);
 }
 
 .button_details:hover{
     background: var(--color_hover);
-    color: #fff;
+    color: var(--color_white);
 }
 
 
@@ -653,7 +546,7 @@ nav{
     left: 17px;
     top: 50%;
     transform: translateY(-50%);
-    color: #FFF;
+    color: var(--color_white);
     font-size: 25px;
 }
 
@@ -736,7 +629,7 @@ nav{
 
 
 .product_info{
-    background: white;
+    background: var(--color_white);
     padding: 2rem;
 }
 
@@ -747,7 +640,7 @@ nav{
 }
 
 .product_name{
-    color: black;
+    color: var(--color_black);
     display: block;
     text-decoration: none;
     font-size: 1.3rem;
@@ -835,7 +728,7 @@ nav{
 
 .checkout_page{
   margin: 80px auto;
-  background-color: #F8F9FA;
+  background-color: var(--color_page_background);
 }
 
 table{
@@ -852,8 +745,8 @@ th{
   text-align: left;
   padding: 5px;
   padding-right: 15px;
-  color: #fff;
-  background: #256D85;  /* Using secondary site colour for table */
+  color: var(--color_white);
+  background: var(--color_secondary);  /* Using secondary site colour for table */
   font-weight: normal;
 }
 
@@ -868,12 +761,12 @@ td input{
 }
 
 td a{
-  color: #ADB5BD;
+  color: var(--color_light_grey);
   font-size: 12px;
 }
 
 td a:hover{
-  color: black;
+  color: var(--color_black);
 }
 
 td img{
@@ -888,7 +781,7 @@ td img{
 }
 
 .checkout_total_price table{
-  border-top: 3px solid #256D85;
+  border-top: 3px solid var(--color_secondary);
   width: 100%;
   max-width: 400px;
 }
@@ -910,7 +803,7 @@ th:last child{
 /* PAYMENT FORM ELEMENT */
 
 .payment_container{
-    background-color: #F8F9FA;
+    background-color: var(--color_page_background);
     width: 60%;
     padding: 25px;
     margin: 25px auto 0;
@@ -919,7 +812,7 @@ th:last child{
 
 .payment_container h4 {
     font-size: 25px;
-    color: #256D85;
+    color: var(--color_secondary);
     text-align: left;
     padding: 10px;
     margin-bottom: 20px;
@@ -948,21 +841,21 @@ th:last child{
 .payment_input_box .name {
     padding: 14px 10px 14px 50px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color_white);
     outline: none;
     letter-spacing: 1px;
     border-radius: 3px;
-    color: black;
-    border: 2px solid #256D85;
+    color: var(--color_black);
+    border: 2px solid var(--color_secondary);
     font-size: 14px;
 }
 
 .name:hover{
-    border-color: #8FE3CF;
+    border-color: var(--color_hover);
 }
 
 .name:focus{
-    border-color: #07293E;
+    border-color: var(--color_primary);
 }
 
 /* Attributes for icon elements */
@@ -975,7 +868,7 @@ th:last child{
     top: 0px;
     left: 0px;
     bottom: 0px;
-    color: #256D85;
+    color: var(--color_secondary);
     background: transparent;
     border-radius: 2px 0 0 2px;
     font-size: 20px;
@@ -987,22 +880,21 @@ th:last child{
     width: 10%;
     padding: 14px;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--color_white);
     letter-spacing: 1px;
-    color: black;
+    color: var(--color_black);
     outline: none;
-    border: 1px solid #c0bfbf;
     border-radius: 3px;
-    border: 2px solid #256D85;
+    border: 2px solid var(--color_secondary);
     font-size: 14px;
 }
 
 .date_of_birth:hover{
-    border-color: #8FE3CF;
+    border-color: var(--color_hover);
 }
 
 .date_of_birth:focus{
-    border-color: #07293E;
+    border-color: var(--color_primary);
 }
 
 .radio {
@@ -1010,19 +902,19 @@ th:last child{
 }
 
 .radio:checked+label {
-    background-color: #8FE3CF;
-    color: #fff;
+    background-color: var(--color_hover);
+    color: var(--color_white);
 }
 
 .payment_input_box label {
     width: 50%;
     padding: 14px;
-    background-color: #fff;
+    background-color: var(--color_white);
     display: inline-block;
     float: left;
     text-align: center;
     border-radius: 3px;
-    border: 2px solid #256D85;
+    border: 2px solid var(--color_secondary);
     font-size: 20px;
 }
 
@@ -1031,20 +923,20 @@ th:last child{
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--color_white);
   border: 0;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  background: #2B4865;
+  background: var(--color_button);
 }
 
 .checkout_botton:hover {
-  background: #8FE3CF;
+  background: var(--color_hover);
 }
 
 .checkout_botton:focus {
-  background: #256D85;
+  background: var(--color_secondary);
 }
 
 
@@ -1089,7 +981,7 @@ th:last child{
     outline: none;
     letter-spacing: 1px;
     border-radius: 3px;
-    color: #000;
+    color: var(--color_black);
     font-size: 14px;
 }
 
@@ -1098,8 +990,8 @@ th:last child{
 }
 
 .log:focus{
-    border-color: black;
-    border: 3px solid black;
+    border-color: var(--color_black);
+    border: 3px solid var(--color_black);
 }
 
 
@@ -1107,8 +999,8 @@ th:last child{
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 2.5px solid black;
-  color: black;
+  border: 2.5px solid var(--color_black);
+  color: var(--color_black);
   background: transparent;
   font-size: 15px;
 }
@@ -1122,7 +1014,7 @@ th:last child{
     top: 0px;
     left: 0px;
     bottom: 0px;
-    color: black;
+    color: var(--color_black);
     background: transparent;
     border-radius: 2px 0 0 2px;
     font-size: 20px;
@@ -1135,22 +1027,22 @@ th:last child{
   left: 0;
   top: 0;
   padding: 10px;
-  color: black;
+  color: var(--color_black);
   cursor: text;
 }
 
 .login_form button {
   padding: 10px 0;
-  color: #black;
+  color: var(--color_black);
   outline: none;
   background: transparent;
-  border: 1px solid black;
+  border: 1px solid var(--color_black);
   width: 100%;
   cursor: pointer;
 }
 
 .login_form ::placeholder{
-  color: black;
+  color: var(--color_black);
 }
 
 
@@ -1195,7 +1087,7 @@ th:last child{
     outline: none;
     letter-spacing: 1px;
     border-radius: 3px;
-    color: white;
+    color: var(--color_white);
     font-size: 14px;
 }
 
@@ -1203,8 +1095,8 @@ th:last child{
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--color_white);
+  color: var(--color_white);
   background: transparent;
   font-size: 15px;
 }
@@ -1218,7 +1110,7 @@ th:last child{
     top: 0px;
     left: 0px;
     bottom: 0px;
-    color: #FFF;
+    color: var(--color_white);
     background: transparent;
     border-radius: 2px 0 0 2px;
     font-size: 20px;
@@ -1231,16 +1123,16 @@ th:last child{
   left: 0;
   top: 0;
   padding: 10px;
-  color: #fff;
+  color: var(--color_white);
   cursor: text;
 }
 
 .feedback_form button {
   padding: 10px 0;
-  color: #fff;
+  color: var(--color_white);
   outline: none;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--color_white);
   width: 100%;
   cursor: pointer;
 }
@@ -1251,8 +1143,8 @@ th:last child{
 }
 
 .feed:focus{
-    border-color: #fff;
-    border: 2px solid #fff;;
+    border-color: var(--color_white);
+    border: 2px solid var(--color_white);
 }
 
 .feedback_form_row{
@@ -1267,7 +1159,7 @@ th:last child{
 }
 
 .feedback_form ::placeholder{
-  color: white;
+  color: var(--color_white);
 }
 
 
@@ -1307,7 +1199,7 @@ th:last child{
 
 .references_list ul li a{
   text-decoration: underline;
-  color: #fff;
+  color: var(--color_white);
 }
 
 
@@ -1325,7 +1217,7 @@ footer{
     position: bottom;
     bottom: 0;
     background: linear-gradient(to right, var(--color_secondary), var(--color_button));
-    color: #fff;
+    color: var(--color_white);
     padding: 10px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
@@ -1368,7 +1260,7 @@ footer{
 
 .footer_column p a{
   text-decoration: underline;
-  color: #fff;
+  color: var(--color_white);
 }
 
 .footer_column p:hover a {
@@ -1380,7 +1272,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--color_light_grey);
   margin-bottom: 50px;
 }
 
@@ -1407,13 +1299,13 @@ footer{
 
 .footer_column form button .fas{
   font-size: 16px;
-  color: #ccc;
+  color: var(--color_light_grey);
 }
 
 .footer_column .footer_contact a{
   text-decoration: none;
   font-size: 18px;
-  color: #FFF;
+  color: var(--color_white);
 }
 
 .footer_column .footer_contact:hover a{
@@ -1423,7 +1315,7 @@ footer{
 
 .footer_column p a{
   text-decoration: underline;
-  color: #fff;
+  color: var(--color_white);
 }
 
 .footer_column p:hover a {
@@ -1433,7 +1325,7 @@ footer{
 hr {
   width: 90%;
   border: 0;
-  border-bottom: 1px solid #ADB5BD;
+  border-bottom: 1px solid var(--color_light_grey);
   margin: 20px auto;
 
 }
@@ -1446,7 +1338,7 @@ hr {
 .underline{
   width: 100%;
   height: 5px;
-  background: #ADB5BD; /* Resorted to using colour code instead of variable for underline since the latter wasn't functional */
+  background: var(--color_light_grey); /* Resorted to using colour code instead of variable for underline since the latter wasn't functional */
   border-radius: 3px;
   position: absolute;
   top: 25px;
