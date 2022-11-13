@@ -6,6 +6,11 @@
   <title> Blepi Seal Paradise Website - Project 2 </title>
   <link href="../css/Seal_Resort_Website.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ed5a3a25a1.js" crossorigin="anonymous"></script>
+
+  <!-- Swipers JS CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+
 </head>
 
 <body>
@@ -30,7 +35,71 @@
 
 
 
+<!-- SWIPING NEWS HEADER ELEMENT -->
 
+<main>
+    <section class="section home" id="home">
+        <div class = "home_content">
+              <div class = "swiper Myswiper">
+                    <div class = "swiper_wrapper">
+                          <div class = "swiper_slide">
+                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
+                          </div>
+
+                          <div class = "swiper_slide">
+                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
+                          </div>
+
+                          <div class = "swiper_slide">
+                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
+                          </div>
+
+                          <div class = "swiper_slide">
+                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
+                          </div>
+                    </div>
+
+                    <div class="swiper_button_next swiper_navigation_button"> </div>
+                    <div class="swiper_button_prev swiper_navigation_button"> </div>
+                    <div class="swiper_pagination"> </div>
+              </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Initialize Swiper -->
+<script>
+
+//Swiper js
+var swiper =  new Swiper(".mySwiper", {
+  slidesperView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    e1: ".swiper_pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextE1: ".swiper_button_next",
+    prevE1: ".swiper_button_prev",
+  }
+});
+
+</script>
 
 
 

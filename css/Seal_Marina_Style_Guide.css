@@ -529,13 +529,11 @@ nav{
 }
 
 .back-video{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: calc(50% - 44.5vh);
+    height: 100vh;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
     z-index: -100;
 }
 
@@ -1221,7 +1219,8 @@ th:last child{
 /* LOGIN FORM */
 
 .login_form_backdrop{
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   height: 100vh;
   background-image: linear-gradient(rgba(180,180,180,0.1), var(--color_white)), url(../img/seal_bar_2.jpeg);
   background-position: center;
@@ -1327,7 +1326,8 @@ th:last child{
 /* FEEDBACK FORM */
 
 .feedback_form_backdrop{
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.3), var(--color_secondary)), url(../img/seal_resort_night.jpg);
   background-position: center;
@@ -1440,13 +1440,14 @@ th:last child{
 /* WEBSITE FOOTER */
 
 footer{
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: calc(25% - 50vh);
     position: bottom;
     bottom: 0;
     background: linear-gradient(to right, var(--color_secondary), var(--color_button));
     color: var(--color_white);
     padding: 10px 0 30px;
-    border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }

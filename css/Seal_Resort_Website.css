@@ -47,6 +47,13 @@ img{
   display: block;
 }
 
+.top_space {
+  margin-top: 6rem;
+}
+
+
+
+
 
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
@@ -255,13 +262,11 @@ nav{
 }
 
 .back-video{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: calc(50% - 44.5vh);
+    height: 100vh;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
     z-index: -100;
 }
 
@@ -401,6 +406,14 @@ nav{
   font-size: 1.5rem;
   line-height: 1.8rem;
 }
+
+.product_title_small_white {
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  color: var(--color_white);
+}
+
 
 .product_text_light {
   font-size: 1rem;
@@ -950,7 +963,10 @@ th:last child{
 /* LOGIN FORM */
 
 .login_form_backdrop{
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: calc(50% - 92vh);
+
   height: 100vh;
   background-image: linear-gradient(rgba(180,180,180,0.1), var(--color_white)), url(../img/seal_bar_2.jpeg);
   background-position: center;
@@ -1057,7 +1073,9 @@ th:last child{
 /* FEEDBACK FORM */
 
 .feedback_form_backdrop{
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: calc(50% - 92vh);
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.3), var(--color_secondary)), url(../img/seal_resort_night.jpg);
   background-position: center;
@@ -1080,7 +1098,6 @@ th:last child{
   flex-direction: row;
   padding: 5px 0;
 }
-
 
 .feedback_input_group .feed {
     padding: 14px 0px 14px 50px;
@@ -1176,8 +1193,9 @@ th:last child{
 /* REFERENCES LIST */
 
 .references_list_backdrop{
-  width: 100%;
-  height: 140vh;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 350vh;
   background-image: linear-gradient(rgba(0,0,0,0.1), var(--color_black)), url(../img/seal_resort_night.jpg);
   background-position: center;
   background-size: cover;
@@ -1187,7 +1205,7 @@ th:last child{
 }
 
 .references_list{
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 .references_list ul li{
@@ -1213,13 +1231,14 @@ th:last child{
 /* WEBSITE FOOTER */
 
 footer{
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: calc(25% - 50vh);
     position: bottom;
     bottom: 0;
     background: linear-gradient(to right, var(--color_secondary), var(--color_button));
     color: var(--color_white);
     padding: 10px 0 30px;
-    border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }
@@ -1363,4 +1382,66 @@ hr {
     .footer_column{
         flex-basis: 100%;
     }
+}
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* NEWS AND EVENTS ELEMENTS */
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background:
+}
+
+.swiper_slide{
+  height: 100vh;
+
+}
+
+
+.home_img {
+
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
