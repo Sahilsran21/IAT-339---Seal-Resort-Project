@@ -8,7 +8,9 @@
   <script src="https://kit.fontawesome.com/ed5a3a25a1.js" crossorigin="anonymous"></script>
 
   <!-- Swipers JS CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!--   <link rel="stylesheet" href="../css/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.css">
+
 
 
 </head>
@@ -33,74 +35,114 @@
     </div>
 
 
+    <nav id="sideNav">
+      <ul class="tt">
+        <li> <a href="Seal_Resort_Website_Main.html">Home</a> </li>
+        <li> <a href="account.html">Account</a> </li>
+        <li> <a href="services.html">Services</a> </li>
+        <li> <a href="service_details.html">Service Details</a> </li>
+        <li> <a href="newsandevents.html">News and Events</a> </li>
+        <li> <a href="checkout.html">Checkout</a> </li>
+        <li> <a href="citations.html">Citations</a> </li>
+      </ul>
+    </nav>
+    <img src="img/hamburger.png" id="menuBtn">
 
 
-<!-- SWIPING NEWS HEADER ELEMENT -->
 
-<main>
-    <section class="section home" id="home">
-        <div class = "home_content">
-              <div class = "swiper Myswiper">
-                    <div class = "swiper_wrapper">
-                          <div class = "swiper_slide">
-                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
-                          </div>
 
-                          <div class = "swiper_slide">
-                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
-                          </div>
 
-                          <div class = "swiper_slide">
-                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
-                          </div>
+    <div class = "top_space"> </div>
 
-                          <div class = "swiper_slide">
-                                <img src="../img/homeImg1.jpg" alt="" class="home_img">
-                          </div>
+        <section class="element">
+              <div class = "products">
+                <div class = "product_container">
+                  <div class="news">
+                    <h1>News of Blepi Seals paradise </h1>
+                  </div>
+                  <div class="gallery-movement">
+
+                  <div class="slide active">
+                    <img src="../img/sealres.jpg" alt="">
+                    <div class="information">
+                      <h2>New Seal Variety</h2>
+                      <p>Blepi Seal Paradise gets new variety of seals, known as Harp Seal which will enhance its beauty to large extent.</p>
                     </div>
+                  </div>
 
-                    <div class="swiper_button_next swiper_navigation_button"> </div>
-                    <div class="swiper_button_prev swiper_navigation_button"> </div>
-                    <div class="swiper_pagination"> </div>
-              </div>
-        </div>
-    </section>
+                  <div class="slide">
+                    <img src="../img/sealres2.jpg" alt="">
+                    <div class="information">
+                      <h2>A Home For Care</h2>
+                      <p>Blepi Seal Paradise is known for unique and special care for seals. A new home which can be free from predators</p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img src="../img/sealres3.jpg" alt="">
+                    <div class="information">
+                      <h2>A Happy Travel Spot </h2>
+                      <p>In an survey it is found that blepi seal paradise is ranked number one in tourism spot around Canada.</p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img src="../img/sealres1.jpg" alt="">
+                    <div class="information">
+                      <h2>Love Seal watching</h2>
+                      <p>Shows like Atypical shows human love toward animals in extreme extents, love for penguins and seals are at their peak as they are not harmful animals.</p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <img src="../img/family_with_seal.jpg" alt="">
+                    <div class="information">
+                      <h2>Family Attraction</h2>
+                      <p>Large tourist attraction is observed in the Blepi Seal Paradise. Recent report suggest large number of visitors in Resort </p>
+                    </div>
+                  </div>
+
+                  <div class="gallerynavigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                  </div>
+
+                  </div>
 
 
 
 
+<script type="text/javascript" src="ourscript.js"></script>
+<script type="text/javascript">
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn');
+let presentslide = 1;
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+// Javascript for image slider manual navigation
+var manualNav = function(man){
+slides.forEach((slide) => {
+  slide.classList.remove('active');
 
+  btns.forEach((btn) => {
+    btn.classList.remove('active');
+  });
+});
 
+slides[man].classList.add('active');
+btns[man].classList.add('active');
+}
 
-
-
-
-
-
-
-    <!-- Initialize Swiper -->
-<script>
-
-//Swiper js
-var swiper =  new Swiper(".mySwiper", {
-  slidesperView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    e1: ".swiper_pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextE1: ".swiper_button_next",
-    prevE1: ".swiper_button_prev",
-  }
+btns.forEach((btn, i) => {
+btn.addEventListener("click", () => {
+  manualNav(i);
+  presentslide = i;
+});
 });
 
 </script>
-
 
 
 
@@ -133,8 +175,9 @@ var swiper =  new Swiper(".mySwiper", {
 
       <div class = "footer_column">
         <h3> Contact Us <div class= "underline"> </div> </h3>
-        <form>
-            <button type="submit" class="footer_contact"> <a href="feedback.html"> Let us know how we did! <i class="fas fa-solid fa-arrow-right"></i> </a> </button>
+           <form>
+              <button type="submit" class="footer_contact"> <a href="feedback.html"> Let us know how we did! <i class="fas fa-solid fa-arrow-right"></i> </a> </button>
+          </form>
       </div>
 
     </div>
@@ -143,3 +186,5 @@ var swiper =  new Swiper(".mySwiper", {
       <p class="copyright"> Blepi Seal Paradise © 2022 - All Rights Reserved </p>
 
   </footer>
+
+</body>
