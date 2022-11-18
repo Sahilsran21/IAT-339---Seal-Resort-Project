@@ -3193,13 +3193,22 @@ width:80%;
 }
 
 .references_list{
-  max-width: 1200px;
+  max-width: 1400px;
+}
+
+.references_list h2{
+  margin-bottom: -50px;
+}
+
+.references_list h3{
+  margin-top: 100px;
+  margin-bottom: -40px;
 }
 
 .references_list ul li{
   list-style: none;
-  margin-bottom: 25px;
-  font-size: 14px;
+  margin-bottom: 14px;
+  font-size: 12px;
   color: var(--color_white);
 }
 
