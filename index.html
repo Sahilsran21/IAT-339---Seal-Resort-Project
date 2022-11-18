@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title> Blepi Seal Paradise Website - Project 2 </title>
   <link href="css/Seal_Resort_Website.css" rel="stylesheet">
@@ -9,16 +10,14 @@
 
 </head>
 
-<!-- This is a test --> 
+<!-- This is a test -->
 
 <body>
 <!-- TITLE AND NAVIGATION SECTION -->
   <div class ="main_header">
 
     <nav>
-      <video autoplay loop class = "back-video" muted plays-inline>
-         <source src="media/sealvid.mp4" type="video/mp4">
-     </video>
+
 
 
      <img src = "img/blepi_logo.png" alt="A logo for the site." class="blepi_logo">
@@ -37,21 +36,22 @@
 
   <!--Side Navigation Pane for Mobile View -->
 
-<script type="text/javascript" src="js/ourscript.js"></script>
-
   <nav id="sideNav">
     <ul class="tt">
       <li> <a href="index.html">Home</a> </li>
       <li> <a href="pages/account.html">Account</a> </li>
       <li> <a href="pages/services.html">Services</a> </li>
       <li> <a href="pages/service_details.html">Service Details</a> </li>
-      <li> <a href="pages/newsandevents.html">News and Events</a> </li>
+      <li> <a href="pages/news&events.html">News and Events</a> </li>
       <li> <a href="pages/checkout.html">Checkout</a> </li>
     </ul>
   </nav>
   <img src="img/hamburger.png" id="menuBtn">
 
 
+  <video autoplay loop class = "back-video" muted plays-inline>
+     <source src="media/sealvid.mp4" type="video/mp4">
+ </video>
 
     <div class = "page_title">
       <h1 class = "product_title_large_white"> Blepi Seal Paradise </h1>
@@ -61,7 +61,7 @@
 
 
 <section id="gallery">
-  <h1>Galleries</h1>
+  <h1 class = "product_title_centered">Galleries </h1>
     <div class= "image_grid">
       <img src="img/cristina_with_seal_miami.png" alt="A fine seal with a fine swimmer." class = "image_grid_element">
       <img src="img/seal_bar.jpg" alt="A pool-side bar." class = "image_grid_element">
@@ -70,7 +70,6 @@
       <img src="img/sealres1.jpg" alt="seal image." class = "image_grid_element">
       <img src="img/sealres2.jpg" alt="seal image." class = "image_grid_element">
     </div>
-  </h1>
 
 
 <section id="about_us">
@@ -195,5 +194,8 @@
     <p class="copyright"> Blepi Seal Paradise © 2022 - All Rights Reserved </p>
 
 </footer>
+
+
+<script type="text/javascript" src="js/ourscript.js"></script>
 
 </body>
